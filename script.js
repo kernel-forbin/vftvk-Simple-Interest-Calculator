@@ -16,7 +16,7 @@ function compute() {
   document.getElementById("show_output").innerText =
     "If you deposit $"+principal+" \n" +
     "at an interest rate of "+rate+"%, \n" +
-    "in the year "+year+". \n" +
+    "in the year "+year+" \n" +
     "you will receive $"+interest+" in interest \n";
     }
 }

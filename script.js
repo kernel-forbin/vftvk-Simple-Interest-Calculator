@@ -13,10 +13,10 @@ function compute() {
   if (principal <= 0) {
     confirm("Enter a positive number!")
   } else {
-  document.getElementById("show_output").innerText =
-    "If you deposit $"+principal+" \n" +
-    "at an interest rate of "+rate+"%, \n" +
-    "in the year "+year+" \n" +
-    "you will receive $"+interest+" in interest. \n";
-    }
+    document.getElementById("show_output").innerHTML = "If you deposit $\<mark\>"+
+    principal + "\</mark\>,\<br\>at an interest rate of \<mark\>" +
+      rate + "%,\</mark\>,\<br\>You will receive an amount of \<mark\>" +
+      interest + "\</mark\>,\<br\>in the year\<mark\>" +
+      year + "\</mark\>.\<br\>"
+  }
 }

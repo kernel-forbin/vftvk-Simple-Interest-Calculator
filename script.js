@@ -17,6 +17,6 @@ function compute() {
     "If you deposit $"+principal+" \n" +
     "at an interest rate of "+rate+"%, \n" +
     "in the year "+year+" \n" +
-    "you will receive $"+interest+" in interest \n";
+    "you will receive $"+interest+" in interest. \n";
     }
 }

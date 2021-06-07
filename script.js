@@ -11,12 +11,14 @@ function compute() {
   var year = new Date().getFullYear() + parseInt(years);
   document.documentElement.style.setProperty('--principal', 'blue');
   if (principal <= 0) {
-    confirm("Enter a positive number!")
+    alert("Enter a positive number!")
+    principal.select();
+    principal.focus();
   } else {
     document.getElementById("show_output").innerHTML = "If you deposit $\<mark\>"+
     principal + "\</mark\>,\<br\>at an interest rate of \<mark\>" +
       rate + "%,\</mark\>,\<br\>You will receive an amount of \<mark\>" +
-      interest + "\</mark\>,\<br\>in the year\<mark\>" +
+      interest + "\</mark\>,\<br\>in the year \<mark\>" +
       year + "\</mark\>.\<br\>"
   }
 }
